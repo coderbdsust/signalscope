@@ -2,6 +2,10 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <!-- LAN device scan: ping sweep + ARP lookup of the connected network -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Reading the connected SSID requires a location permission on Android 8+ -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

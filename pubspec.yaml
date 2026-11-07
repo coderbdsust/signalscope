@@ -1,5 +1,5 @@
 name: signalscope
-description: "Live WiFi signal and ambient sound monitor."
+description: "Live WiFi signal, ambient sound and local network device monitor."
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -11,16 +11,21 @@ dependencies:
     sdk: flutter
 
   # WiFi SSID / IP (RSSI comes from the native MethodChannel in MainActivity.kt)
-  network_info_plus: ^6.0.0
+  network_info_plus: ^8.0.0
 
   # Microphone loudness stream (relative dB)
-  noise_meter: ^5.0.2
+  noise_meter: ^6.0.0
 
   # Runtime permission requests (mic + location)
-  permission_handler: ^11.3.1
+  permission_handler: ^13.0.0
+
+  shared_preferences: ^2.3.0
 
 dev_dependencies:
   flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/oui.csv
